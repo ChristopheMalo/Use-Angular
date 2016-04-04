@@ -19,7 +19,9 @@ How to create an Angular project structure on local MAC OS X machine:
     - Define the local dependencies of the projets
     - Backend dependencies managed with NPM (package.json)
         - Install modules and plugins with console and save in json file:
-            - grunt: npm install <grunt-modules-or-plugins-name> --save-dev
-            - karma: npm install <karma-modulesor-plugins-name> --save-dev
+            - grunt: npm install <grunt-modules-or-plugins-name> --save or --save-dev
+            - karma: npm install <karma-modulesor-plugins-name> --save or --save-dev
     - Frontent with Bower (bower.json)
         - Init bower file in local folder: bower init
+        - Install modules and plugins with console and save json file:
+            - angular: bower install <angular-modules-or-plugins-name> --save or save-dev
