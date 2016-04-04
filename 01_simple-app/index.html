@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>01 Simple angular application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Minified angular -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+        <!-- Boostrap minified -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    </head>
+    <body ng-app>
+        <div class="container">
+            <div class="row">
+                <h1>A simple Angular application</h1>
+                <div>
+                    <label>Enter your name:</label>
+                    <input type="text" ng-model="name">
+                </div>
+                <div>
+                    <label>Hi {{ name }} Enter 2 numbers to multiply</label>
+                    <input type="text" ng-model="Number1"> X <input type="text" ng-model="Number2"> = <span>{{ Number1 * Number2 }}</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
