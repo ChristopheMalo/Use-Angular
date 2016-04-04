@@ -10,7 +10,9 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
-    "karma": "^0.13.22"
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-jasmine": "^0.3.8"
   },
   "license": "MIT"
 }
