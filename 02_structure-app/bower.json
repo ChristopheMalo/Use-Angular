@@ -1,0 +1,15 @@
+{
+  "name": "angular-structure-app",
+  "version": "0.1.0",
+  "description": "An angular structure application",
+  "author": "Christophe Malo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChristopheMalo/Use-Angular"
+  },
+  "dependencies": {
+    "angular": "^1.5.3"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}
