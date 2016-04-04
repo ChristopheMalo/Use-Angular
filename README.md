@@ -25,4 +25,9 @@ How to create an Angular project structure with test on local MAC OS X machine:
         - Init bower file in local folder: bower init
         - Install modules and plugins with console and save json file:
             - angular: bower install <angular-modules-or-plugins-name> --save or save-dev
-    - Code a controller test file (NameController) in folder test/unit/controller 
+    - Code a controller test file (NameController) in folder test/unit/controller
+
+## 03_create-app
+How to create an Angular project strucuture without test on local MAC OS X:
+- Create the projetc structure
+- Install dependencies
