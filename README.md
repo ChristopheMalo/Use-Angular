@@ -28,6 +28,10 @@ How to create an Angular project structure with test on local MAC OS X machine:
     - Code a controller test file (NameController) in folder test/unit/controller
 
 ## 03_create-app
-How to create an Angular project strucuture without test on local MAC OS X:
-- Create the projetc structure
+How to create an Angular project structure (manually) without test on local MAC OS X:
+- Create the project structure
 - Install dependencies
+
+## 04_create-app-seed
+How to create an Angular project structure with (off: icial) seed
+- Clone the seed from github, start a new project without history: git clone --depth=1 https://github.com/angular/angular-seed.git <project-name>
