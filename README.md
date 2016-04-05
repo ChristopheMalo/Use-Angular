@@ -46,3 +46,6 @@ This app display a list and details of films
 
 - Init the structure folder
 - Code the JSON bower and package files
+- Install and save bower_components: 
+    - bower install angular angular-route bootstrap jquery --save
+    - bower install angular-mocks --save-dev
