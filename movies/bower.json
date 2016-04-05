@@ -7,12 +7,12 @@
     "type": "git",
     "url": "https://github.com/ChristopheMalo/Use-Angular"
   },
+  "license": "MIT",
   "dependencies": {
     "angular": "^1.5.3",
     "angular-route": "^1.5.3",
     "bootstrap": "^3.3.6",
     "jquery": "^2.2.2"
   },
-  "devDependencies": {},
-  "license": "MIT"
+  "devDependencies": {}
 }
