@@ -51,3 +51,5 @@ This app display a list and details of films
     - bower install angular-mocks --save-dev
 - Install and save node_modules
     - npm install http-server jasmine-core karma karma-firefox-launcher karma-jasmine karma-junit-reporter protractor --save-dev
+- Script start node server
+- Install BoilerplateHtml5 to use the template (404 error, favicon...): bower install html5-boilerplate --save
