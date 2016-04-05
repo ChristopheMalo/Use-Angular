@@ -52,4 +52,7 @@ This app display a list and details of films
 - Install and save node_modules
     - npm install http-server jasmine-core karma karma-firefox-launcher karma-jasmine karma-junit-reporter protractor --save-dev
 - Script start node server
-- Install BoilerplateHtml5 to use the template (404 error, favicon...): bower install html5-boilerplate --save
+- Install BoilerplateHtml5 to use some elements (404 error, favicon...): bower install html5-boilerplate --save
+- Code the index file
+- Install express (for node): npm install express --save
+- Code a node server to manage url and public folder
