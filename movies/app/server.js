@@ -9,8 +9,8 @@ var express = require('express'); // Load Express framework
 var http = require('http'); // Load module
 var application = express(); // Create application
 var server = http.createServer(application); // Create the server
-
 var path = require('path');
+
 application.use('/bower_components', express.static(path.join(__dirname, 'bower_components')));
 
 application.get('/', function(request, response)
