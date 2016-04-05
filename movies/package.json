@@ -8,7 +8,9 @@
     "url": "https://github.com/ChristopheMalo/Use-Angular"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.13.4"
+  },
   "devDependencies": {
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
@@ -19,6 +21,6 @@
     "protractor": "^3.2.2"
   },
   "scripts": {
-      "start": "http-server -a localhost -p 8080 -c-1"
+    "start": "http-server -a localhost -p 8000 -c-1"
   }
 }
