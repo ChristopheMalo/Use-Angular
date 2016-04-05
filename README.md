@@ -49,3 +49,5 @@ This app display a list and details of films
 - Install and save bower_components: 
     - bower install angular angular-route bootstrap jquery --save
     - bower install angular-mocks --save-dev
+- Install and save node_modules
+    - npm install http-server jasmine-core karma karma-firefox-launcher karma-jasmine karma-junit-reporter protractor --save-dev
