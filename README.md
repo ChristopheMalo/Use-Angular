@@ -35,3 +35,6 @@ How to create an Angular project structure (manually) without test on local MAC 
 ## 04_create-app-seed
 How to create an Angular project structure with (off: icial) seed
 - Clone the seed from github, start a new project without history: git clone --depth=1 https://github.com/angular/angular-seed.git <project-name>
+- [sudo] npm install
+- bower install
+- [sudo] npm and bower update
