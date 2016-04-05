@@ -38,3 +38,11 @@ How to create an Angular project structure with (off: icial) seed
 - [sudo] npm install
 - bower install
 - [sudo] npm and bower update
+
+## movies
+A complete app, use seed but write all code to understand howw seed works. I'm not using all the seed code. Bower components are installed outside the app.
+
+This app display a list and details of films
+
+- Init the structure folder
+- Code the JSON bower and package files
