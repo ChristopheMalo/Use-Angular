@@ -19,6 +19,6 @@
     "protractor": "^3.2.2"
   },
   "scripts": {
-      
+      "start": "http-server -a localhost -p 8080 -c-1"
   }
 }
