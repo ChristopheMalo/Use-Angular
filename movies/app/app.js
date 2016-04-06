@@ -9,16 +9,16 @@
  * Main module of the application.
  */
 angular
-        .module('movies', [
-            'ngRoute'
-        ])
-        .config(function ($routeProvider) {
-            $routeProvider
-                    .when('/', {
-                        templateUrl: 'index.html'
-                       // controller: 'PopularCtrl'
-                    })
-                    .otherwise({
-                        redirectTo: '/'
-                    });
-        });
+    .module('movies', [
+        'ngRoute'
+    ])
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/viewList', {
+                templateUrl: 'viewList/viewList.html',
+                controller: 'ViewListController'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+    });

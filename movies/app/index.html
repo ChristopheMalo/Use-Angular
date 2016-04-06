@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +17,41 @@
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
     </head>
-    <body>
+    <body ng-app="movies">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a ng-href="#">Films populaires</a></li>
+                </ul>
+                <h3 class="text-muted">Le cinéma avec Angular</h3>
+                <div class="row">
+                    <form class="form-horizontal col-md-8 col-md-offset-2" role="form" ng-controller="HeaderCtrl">
+                        <div class="input-group">
+                            <input ng-model="query" type="text" class="form-control" placeholder="Le loup de Wall-Street, Django...">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default glyphicon glyphicon-search" type="button" ng-click="searchAction()"></button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div ng-view=""></div>
+
+            <div class="footer">
+
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
         <div class="container">
             <div class="row">
                 <ul class="menu">
@@ -50,24 +81,17 @@
             </div>
         </div>
 
-        <!-- In production use Angular 1.5.3:
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
-        -->
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="app.js"></script>
-        <script src="view1/view1.js"></script>
-        <script src="view2/view2.js"></script>
-        <script src="components/directive.js"></script>
-        <script src="components/filters.js"></script>
-        <script src="components/services.js"></script>
-        <script src="components/version.js"></script>
-
-        <!-- In production use 2.2.2:
-        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-        -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        
+        
+        <script src="app.js"></script>
+        <script src="viewList/viewList.js"></script>
+        <script src="components/version/ajaxRequest.js"></script>
 
+        
         <!-- Google Analytics: change UA-XXXXX-X to be site's ID. -->
         <script>
             (function (b, o, i, l, e, r) {
