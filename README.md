@@ -56,3 +56,5 @@ This app display a list and details of films
 - Code the index file
 - Install express (for node): npm install express --save
 - Code a node server to manage url and public folder
+- Install moviedb to use API: npm install moviedb --save
+- Code viewList to display all films
