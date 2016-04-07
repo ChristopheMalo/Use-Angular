@@ -58,3 +58,12 @@ This app display a list and details of films
 - Code a node server to manage url and public folder
 - Install moviedb to use API: npm install moviedb --save
 - Code viewList to display all films
+
+## tvDB
+A simple app to display tv program
+
+- Init the structure folder
+- Code the JSON bower file and save dependencies: bower install angular boostrap --save (jQuery is installed with dependency with bootstrap)
+- Code th app JS file
+- Code the controller viewPrograms
+- Code the index file
