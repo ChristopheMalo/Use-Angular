@@ -1,0 +1,32 @@
+/**
+* Sass file for tvDB project
+* 
+* @author: Christophe Malo
+* @version: 0.1 0
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+body {
+  background: #D142C7;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 20px; }
+
+.container {
+  background-color: #FFF;
+  border: 10px solid #000; }
+
+.show {
+  border: 4px solid #15B9D6;
+  margin-top: 20px;
+  padding: 10px; }
+
+h3 {
+  margin-top: 0; }
+
+img {
+  width: 100%; }
+
+footer {
+  margin-top: 20px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+$versionFile: 0.1.0;
+/**
+* Sass file for tvDB project
+* 
+* @author: Christophe Malo
+* @version: #{$versionFile}
+*/
+// The syntax is SCSS
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+// Font
+$global-font: "Open Sans", Helvetica, Arial, sans-serif;
+
+// Color
+$bgColor1: #D142C7;
+$white: #FFF;
+$color1: #15B9D6;
+$darkColor: #000;
+
+// Numbers
+$distance: 20px;
+$distance2: 10px;
+$size: 100%;
+$mediumBorder: 10px;
+$thinBorder: 4px;
+
+// Mixins
+@mixin borderStyle($size, $type, $color) {
+    border: $size $type $color;
+}
+
+body {
+    background: $bgColor1;
+    font-family: $global-font;
+    margin: $distance;
+}
+
+.container {
+    background-color: $white;
+    // Declare global variable
+    $borderOne: $mediumBorder solid $darkColor !global;
+    border: $borderOne;
+}
+
+.show {
+    @include borderStyle($thinBorder, solid, $color1);
+    margin-top: $distance;
+    padding: $distance2;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+img {
+    width: $size;
+}
+
+footer {
+    margin-top: $distance;
+    text-align: center;
+}
