@@ -1,4 +1,4 @@
-application.controller('viewPrograms', function ($scope, $filter, $http) {
+application.controller('ViewProgramsCtrl', function ($scope, $filter, $http) {
     $scope.days = 6; // Number of filter days
     $scope.today = new Date(); // Date of the current day - start of search
     $scope.dateStart = $filter('date')($scope.today, 'yyyy-MM-dd'); // Filter the date

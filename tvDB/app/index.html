@@ -5,42 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TV Show Programs</title>
     <!-- Call CSS dependencies -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     
     <!-- Call CSS app -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app="tvDB">
-    <div class='banner'>
-        <div class='container'>
-            <h1>TV Show Programs</h1>
+    <div class="container">
+        <div class="row">
+            <header class="col-sm-12">
+                <h1>TV Show Programs</h1>
+            </header>
+            <section class="col-sm-12" ng-controller="ViewProgramsCtrl" ng-init="init()">
+                <div class="shows-list">
+                    <div class="show" ng-repeat="result in results">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="{{result.episode.images.screenshot.thumb}}" alt="{{ result.show.title }}">
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>{{result.show.title}}: {{result.episode.title}}</h3>
+                                <p>{{result.episode.overview}}</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="fulldate pull-right label label-info">{{result.date}}</div>
+                                <ul class="show-info">
+                                    <li><strong>On Air:</strong> {{result.show.airs.day}} {{result.show.airs.time}}</li>
+                                    <li><strong>Network:</strong> {{result.show.network}}</li>
+                                    <li><strong>Season:</strong> {{result.episode.season}}</li>
+                                    <li><strong>Genres:</strong><ul ng-repeat="genre in result.show.genres"><li>{{genre}}</li></ul></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <footer class="col-sm-12">
+                <p>This project use Angular.js and Track.TV API to display shows</p>
+            </footer>
         </div>
     </div>
-    <div class="container main-frame" ng-controller="viewPrograms" ng-init="init()">
-        <div class="search-box row-fluid form-inline"></div>
-        <div class="results-top"></div>
-        <div class="results-container">
-            <ul class="episode-list">
-                <li ng-repeat="result in results">
-                    <h3>{{result.show.title}}: {{result.episode.title}}</h3>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <label>Enter your name:</label>
-            <input type="text" ng-model="name">
-        </div>
-        <div>
-            <label>Hi {{ name }} Enter 2 numbers to multiply</label>
-            <input type="text" ng-model="Number1"> X <input type="text" ng-model="Number2"> = <span>{{ Number1 * Number2 }}</span>
-        </div>
-        <div class="results-bottom"></div>
-    </div>
+    
+  
     <!-- Call JS dependencies -->
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     
     <!-- Call JS app files -->
     <script type="text/javascript" src="app.js"></script>
-    <script type="text/javascript" src="controllers/viewPrograms.js"></script>
+    <script type="text/javascript" src="shows/view-programs.controller.js"></script>
 </body>
 </html>
